@@ -29,7 +29,7 @@ test_subject_file <-  ".//hardata//UCI HAR Dataset//test//subject_test.txt"
 features_file <- ".//hardata//UCI HAR Dataset//features.txt"                  
 activity_label_file <- ".//hardata//UCI HAR Dataset//activity_labels.txt"     
 
-#reads train and test files into R
+#reads training and test files into R
 
 train_data<-read.table(train_data_file)
 train_labels<-read.table(train_label_file) 
