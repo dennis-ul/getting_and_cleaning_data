@@ -8,6 +8,9 @@ A full description is available at the site where the data was obtained:
 
 <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>
 
+In this course project I transformed the raw data set into a tidy data
+set which can be unsed for later analysis.
+
 Script course project
 ---------------------
 
