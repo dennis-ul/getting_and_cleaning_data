@@ -52,8 +52,11 @@ total_subject <- rbind(train_subject, test_subject)
 
 #Extract only the measurements on the mean and standard deviation for each measurement.
 
-col_nums<-grepl("mean|std",names(total_data))
-total_data_small<-total_data[,col_nums]
+grep_mean<-grep("mean()",names(total_data), value=FALSE, fixed=TRUE)
+grep_std<-grep("std()",names(total_data), value=FALSE, fixed=TRUE)
+
+total_data_small<-total_data[,sort(combine(grep_mean,grep_std))]
+names(total_data_small)
 
 #Uses descriptive activity names to name the activities in the data set
 #and appropriately labels the data set with descriptive variable names.
@@ -72,4 +75,6 @@ data_tidy<-final_data %>%
             group_by(subject, activity) %>%
             summarize_all(mean)
 
+write.table(data_tidy, ".\\data_tidy.txt", row.name=FALSE)
 
+View(names(data_tidy))
