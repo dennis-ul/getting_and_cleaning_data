@@ -5,7 +5,7 @@ setwd("C://Coursera//Data Science R//3 Getting and Cleaning Data")
 library(dplyr)
 
 
-# 0. Download and unzip the file into current working directory.
+#Download and unzip the file into current working directory.
 
 url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(url,destfile = ".//hardata.zip")
@@ -28,9 +28,6 @@ test_label_file<- ".//hardata//UCI HAR Dataset//test//y_test.txt"
 test_subject_file <-  ".//hardata//UCI HAR Dataset//test//subject_test.txt"    
 features_file <- ".//hardata//UCI HAR Dataset//features.txt"                  
 activity_label_file <- ".//hardata//UCI HAR Dataset//activity_labels.txt"     
-
-
-
 
 #reads train and test files into R
 
@@ -75,8 +72,4 @@ data_tidy<-final_data %>%
             group_by(subject, activity) %>%
             summarize_all(mean)
 
-?write.table
 
-write.table(data_tidy, "data_tidy.csv", sep = " , ", row.names=FALSE)
-
-View(data_tidy)
