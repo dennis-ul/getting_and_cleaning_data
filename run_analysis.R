@@ -61,7 +61,7 @@ total_data_small<-total_data[,col_nums]
 names(total_subject)<-"subject"
 names(total_labels)<-"activity_no"
 
-# create complete dataset
+
 data_complete <- cbind(total_subject, total_labels, total_data_small)
 final_data <- merge(x=data_complete,y=activity, by.x="activity_no", by.y = "activity_no")
 final_data <- final_data %>% select(subject,activity,everything(),-activity_no)
