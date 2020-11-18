@@ -40,7 +40,7 @@ signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ,
 fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the ‘f’ to
 indicate frequency domain signals).
 
-From these signals the estimated mean value (mean) and standard
+From these signals the estimated mean value mean() and standard
 deviation std() is used in this dataset.
 
 -   tBodyAcc-mean()-Y
