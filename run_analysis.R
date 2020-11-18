@@ -77,4 +77,4 @@ data_tidy<-final_data %>%
 
 write.table(data_tidy, ".\\data_tidy.txt", row.name=FALSE)
 
-View(names(data_tidy))
+
