@@ -2,9 +2,11 @@ Data
 ====
 
 The tidy data is presented in its wide form. Which means that every
-feature is considered as one variable. In the tidy dataset every
-observation ist a combination of a subject and a specific activity.
-Every of the 30 subjects has done 6 activities.
+feature is considered as one variable. In the tidy data set every
+observation is a combination of a subject and a specific activity. The
+tidy data set consists of 81 variables which can be separated into two
+ID Variables which define which subject has done which activity and 79
+feature variables which are measured within the experiment.
 
 Transformations
 ===============
