@@ -44,8 +44,8 @@ vector from test and training set are merge via rbind.
 ### Extract only the measurements on the mean and standard deviation for each measurement.
 
 The total data set is a huge dataset with 561 variables(features). In
-this step only the variables with contains a “mean” or “std” in their
-name are kept. The result ist a much smaller data set with only 79
+this step only the variables which contains a “mean” or “std” in their
+names are kept. The result ist a much smaller data set with only 79
 variables.
 
 ### Uses descriptive activity names to name the activities in the data set/ Appropriately labels the data set with descriptive variable names.
@@ -75,7 +75,7 @@ Variables
 ### ID Variables:
 
 -   subject (numeric): Each row identifies the subject who performed the
-    activity for each window sample. Its range is from 1 to 30.
+    activity. Its range is from 1 to 30.
 -   activity (factor): A factor variable with 6 levels which describes
     the activity which is performed by the subject
 
